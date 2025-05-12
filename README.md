@@ -60,7 +60,7 @@ You may run into unwanted processes being sent to Discord, or have a abreviated 
 ---
 
 
-[![Screenshot-2025-05-11-at-4-45-23-PM.png](https://i.postimg.cc/sDFxPPV4/Screenshot-2025-05-11-at-4-45-23-PM.png)](https://postimg.cc/9zpcC7wD)
+[![Screenshot-2025-05-11-at-6-52-46-PM.jpg](https://i.postimg.cc/LXc9TRM8/Screenshot-2025-05-11-at-6-52-46-PM.jpg)](https://postimg.cc/mzSWLvDv)
 
 I am not a developer, i just vibe coded this up with chatgpt. If there is any questions best way to contact me is in the [Mac Gaming Discord](https://discord.gg/JKxywARX) @Jfishin
 
