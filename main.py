@@ -18,7 +18,7 @@ class Config(TypedDict):
 # === CONFIG ===
 CONFIG_PATH = "config.json"
 SCAN_INTERVAL = 5  # seconds
-DISCORD_CLIENT_ID = "1365600859387592704"
+DISCORD_CLIENT_ID = "1371226484022317127"
 
 # === LOAD CONFIG ===
 with open(CONFIG_PATH) as f:
@@ -74,7 +74,8 @@ def clean_name(path: str) -> str:
     if base_lower in OVERRIDES:
         return OVERRIDES[base_lower]
     # Auto-split CamelCase (e.g., "TheMessenger" -> "The Messenger")
-    split_name = re.sub(r"(?<!^)(?=[A-Z])", " ", base_orig)
+    # Only split at lowercase->uppercase boundaries to avoid breaking all-caps names
+    split_name = re.sub(r"(?<=[a-z])(?=[A-Z])", " ", base_orig)
     return split_name
 
 
@@ -109,7 +110,7 @@ def main():
             last = game
             if game:
                 print(f"→ Detected game: {game}")
-                rpc.update(state=f"Playing {game}", large_text=game)
+                rpc.update(details=game, start=int(time.time()))
             else:
                 print("→ No game detected, clearing presence")
                 rpc.clear()
