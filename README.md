@@ -1,5 +1,5 @@
 
-# WineGames - WineBridge 
+# PROJECT CURRENTLY RETIRED. WORKING ON A NATIVE SWIFT VERSION. 
 
 [![Wine-Bridge-icon.png](https://i.postimg.cc/d7PLcdf7/pic.png)](https://postimg.cc/d7PLcdf7)
 
